@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎新员工</title>
+</head>
+<body>
+<!--
+ @PROJECT_NAME: vhr
+ @author gcx_javaboy
+ @DATE: 2021/1/30 21:35
+ @version 1.0 
+-->
+欢迎 <span th:text="${name}"></span> 加入GCX，您的入职信息如下：
+<table border="1">
+    <tr>
+        <td>姓名</td>
+        <td th:text="${name}"></td>
+    </tr>
+    <tr>
+        <td>职位</td>
+        <td th:text="${posName}"></td>
+    </tr>
+    <tr>
+        <td>职称</td>
+        <td th:text="${jobLevelName}"></td>
+    </tr>
+    <tr>
+        <td>部门</td>
+        <td th:text="${departmentName}"></td>
+    </tr>
+</table>
+<p>
+    希望在未来的日子里，携手共进！
+</p>
+</body>
+</html>
